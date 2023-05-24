@@ -4,12 +4,13 @@ class Node :
         self.right = None
         self.value = key 
 
+
 def Preorder(root):
     if root :
         print(root.value,end=",")
         Preorder(root.left)
         Preorder(root.right)
-
+ 
 root = Node(1)
 root.left = Node(2)
 root.right =  Node(3)
